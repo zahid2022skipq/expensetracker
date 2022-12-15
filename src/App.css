@@ -1,14 +1,27 @@
 .App{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-contianer{
+  display: flex;
   background-color: azure;
+  width: 100%;
   padding: 20px;
 }
 
-
-
-.logo h1{
+.logo{
 
   font-weight: 100;
+  align-self: center;
+  justify-self: center;
+  padding-left: 40%;
   
+}
+
+.accounts-container{
+  margin-right: 200px;
+  margin-top: 40px;
+  padding: 0;
 }

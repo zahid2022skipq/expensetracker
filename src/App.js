@@ -1,10 +1,14 @@
 import "./App.css";
+import AccountDetails from "./Components/Account Details/AccountDetails";
 
 function App() {
   return (
     <div className="App">
-      <div className="logo">
-        <h1>Expense Tracker</h1>
+      <div className="logo-contianer">
+        <h1 className="logo">Expense Tracker</h1>
+      </div>
+      <div className="accounts-container">
+        <AccountDetails />
       </div>
     </div>
   );
