@@ -1,5 +1,6 @@
 import "./App.css";
 import AccountDetails from "./Components/Account Details/AccountDetails";
+import History from "./Components/History/History";
 
 function App() {
   return (
@@ -9,6 +10,10 @@ function App() {
       </div>
       <div className="accounts-container">
         <AccountDetails />
+      </div>
+
+      <div className="history">
+        <History />
       </div>
     </div>
   );
