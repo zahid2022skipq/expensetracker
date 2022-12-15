@@ -1,0 +1,14 @@
+.App{
+  display: flex;
+  justify-content: center;
+  background-color: azure;
+  padding: 20px;
+}
+
+
+
+.logo h1{
+
+  font-weight: 100;
+  
+}
