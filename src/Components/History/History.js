@@ -6,7 +6,7 @@ import Transactions from "./Transactions";
 
 const History = () => {
   const data = useSelector((state) => state.reducer);
-  console.log("Data --> ", data);
+
   return (
     <div className="history-container">
       <h3 className="history-heading">History</h3>

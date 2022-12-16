@@ -10,7 +10,6 @@ export const transactionReducer = (
       state[0].income +=
         action.payload.amount < 0 ? 0 : Math.abs(action.payload.amount);
 
-      console.log("REDUCER --> ", [...state, action.payload]);
       return [...state, action.payload];
     default:
       return state;
