@@ -1,27 +1,27 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 import "./history.css";
 import Transactions from "./Transactions";
 
-const data = [
-  { transactionType: "Cash", amount: 200 },
-  { transactionType: "Books", amount: -300 },
-  { transactionType: "Dinner", amount: -5 },
-  { transactionType: "Camera", amount: -400 },
-];
-
 const History = () => {
+  const data = useSelector((state) => state.reducer);
+  console.log("Data --> ", data);
   return (
     <div className="history-container">
       <h3 className="history-heading">History</h3>
 
       <div>
-        {data.map((transaction) => (
-          <Transactions
-            transactionType={transaction.transactionType}
-            amount={transaction.amount}
-          />
-        ))}
+        {data.map(
+          (transaction, index) =>
+            index > 0 && (
+              <Transactions
+                key={index}
+                transactionType={transaction.transactionType}
+                amount={transaction.amount}
+              />
+            )
+        )}
       </div>
     </div>
   );

@@ -39,3 +39,13 @@
     line-height: 0.21px;
 
 }
+
+.update{
+    height: 40px;
+    width: 80px;
+    font-size: 14px;
+    padding: 0;
+    margin-top: 10px;
+    transition: 0.4s ease-in-out;
+}
+
